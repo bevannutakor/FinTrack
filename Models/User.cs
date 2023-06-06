@@ -18,4 +18,3 @@ namespace PersonalFinanceManager.Models
 		public string? name { get; set; }
 	}
 }
-
