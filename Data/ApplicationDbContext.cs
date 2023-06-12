@@ -9,7 +9,7 @@ using PersonalFinanceManager.Models;
 namespace PersonalFinanceManager.Data
 {
 	public class ApplicationDbContext : IdentityDbContext
-	{
+    {
         //options includes information to conncet to our database
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)

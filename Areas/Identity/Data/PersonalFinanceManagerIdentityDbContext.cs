@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace PersonalFinanceManager.Areas.Identity.Data;
 
-public class PersonalFinanceManagerIdentityDbContext : IdentityDbContext<IdentityUser>
+public class PersonalFinanceManagerIdentityDbContext : IdentityDbContext
 {
     public PersonalFinanceManagerIdentityDbContext(DbContextOptions<PersonalFinanceManagerIdentityDbContext> options)
         : base(options)
