@@ -1,11 +1,11 @@
 ﻿using System;
+using Microsoft.AspNetCore.Identity;
+
 namespace PersonalFinanceManager.Areas.Identity.Data
 {
-	public class ApplicationUser
+	public class ApplicationUser : IdentityUser
 	{
-		public ApplicationUser()
-		{
-		}
+		
 	}
 }
 

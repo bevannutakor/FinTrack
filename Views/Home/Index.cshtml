@@ -1,9 +1,50 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{
     ViewData["Title"] = "Home Page";
 }
+<div class="lg:flex w-full my-10">
+    <div class="lg:px-20 lg:w-8/12">
+        <h1 class="lg:text-7xl font-bold w-100">Empower Your Financial Future with Fintrack</h1>
+        <br />
+        <h3 class="text-xl">Our financial app empowers users to effortlessly manage personal finances with intuitive budgeting, real-time tracking, secure transactions, and personalized insights for confident goal achievement.</h3>
+        <div class="bg-violet-500 py-4 px-8 rounded-md mt-8">
+            <p class="text-center text-slate-50"><a>Get Started</a></p>
+        </div>
+    </div>
+    <div>
+        <img src="~/images/home-jumbo.svg" />
+    </div>
+</div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<br />
+<div class="lg:grid lg:grid-cols-3 lg:gap-4">
+    <!--cards-->
+    <div class="bg-slate-50 border-2 border-violet-500 p-5 shadow-2xl rounded-xl">
+        <h3 class="text-3xl">Bugeting</h3>
+        <br />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="bg-slate-50 border-2 border-violet-500 p-5 shadow-2xl rounded-xl">
+        <h3 class="text-3xl">Expense Tracking</h3>
+        <br />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="bg-slate-50 border-2 border-violet-500 p-5 shadow-2xl rounded-xl">
+        <h3 class="text-3xl">Income management</h3>
+        <br />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+</div>
+
+<div>
+
+</div>
+
+<div>
+
 </div>
 
